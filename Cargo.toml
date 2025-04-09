@@ -4,12 +4,15 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+imxrt-hal = "0.5"
 imxrt-log = { version = "0.1", default-features = false, features = ["log", "usbd"] }
 libm = "0.2"
 log = { version = "0.4", features = ["max_level_debug", "release_max_level_info"] }
+nrf24-rs = "0.2"
 rtic = { version = "2", features = ["thumbv7-backend"] }
 rtic-monotonics = { version = "1", default-features = false, features = ["cortex-m-systick"] }
 teensy4-panic = { version = "0.2", features = ["log"] }
+thiserror = { version = "2", default-features = false }
 
 [dependencies.teensy4-bsp]
 version = "0.5"

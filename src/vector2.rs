@@ -5,7 +5,7 @@ use core::{
 
 use crate::math::{lerp, radians};
 
-#[derive(Clone, Debug, Default, PartialEq)]
+#[derive(Clone, Copy, Debug, Default, PartialEq)]
 /// Data structure for holding 2D vectors
 pub struct Vector2 {
     pub x: f32,

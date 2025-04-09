@@ -339,6 +339,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "8d5439c4ad607c3c23abf66de8c8bf57ba8adcd1f129e699851a6e43935d339d"
 
 [[package]]
+name = "nrf24-rs"
+version = "0.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "95df79b3c0e5bcbedc8f897d4610db39dd63924ea9e904321cf70b14bb2399bd"
+dependencies = [
+ "embedded-hal 1.0.0",
+]
+
+[[package]]
 name = "pin-project-lite"
 version = "0.2.16"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -406,13 +415,16 @@ checksum = "46b71a9d9206e8b46714c74255adcaea8b11e0350c1d8456165073c3f75fc81a"
 name = "rexapod"
 version = "0.1.0"
 dependencies = [
+ "imxrt-hal",
  "imxrt-log",
  "libm",
  "log",
+ "nrf24-rs",
  "rtic",
  "rtic-monotonics",
  "teensy4-bsp",
  "teensy4-panic",
+ "thiserror",
 ]
 
 [[package]]
@@ -567,6 +579,26 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "631a1f5431b534b083974457a0383875575e483710247e65bc0c508ea3a1d59f"
 dependencies = [
  "imxrt-iomuxc",
+]
+
+[[package]]
+name = "thiserror"
+version = "2.0.12"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "567b8a2dae586314f7be2a752ec7474332959c6460e02bde30d702a66d488708"
+dependencies = [
+ "thiserror-impl",
+]
+
+[[package]]
+name = "thiserror-impl"
+version = "2.0.12"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7f7cf42b4507d8ea322120659672cf1b9dbb93f8f2d4ecfd6e51350ff5b17a1d"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn 2.0.100",
 ]
 
 [[package]]

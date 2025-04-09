@@ -16,6 +16,7 @@ use teensy4_panic as _;
 
 mod bezier;
 mod math;
+mod nrf;
 mod state;
 mod vector2;
 mod vector3;

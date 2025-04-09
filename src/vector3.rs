@@ -8,7 +8,7 @@ use crate::{
     vector2::Vector2,
 };
 
-#[derive(Clone, Debug, Default, PartialEq)]
+#[derive(Clone, Copy, Debug, Default, PartialEq)]
 /// Data structure for holding 3D vectors
 pub struct Vector3 {
     pub x: f32,
